@@ -5,11 +5,12 @@ let cors = require('cors')
 const attendRouter = require('./routes/sheet')
 const leaveRouter = require('./routes/applyleave')
 const adminRouter = require('./routes/adminpath')
-
+const path = require('path')
 
 let app = express();
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/auth', userRouter)
