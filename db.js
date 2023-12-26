@@ -1,3 +1,4 @@
 let mongoose = require('mongoose')
-let url = 'mongodb+srv://jitumistry073:T6iSaQQVtli4YUQL@ems.zgt2nqq.mongodb.net/?retryWrites=true&w=majority'
+require('dotenv').config()
+let url = process.env.DATABASE_KEY
 mongoose.connect(url)
