@@ -23,6 +23,9 @@ attendRouter.post('/check', async (req, res) => {
                 res.send('Invalid Employee')
             }
         })
+        .catch(()=> {
+            res.send('Invalid')
+        })
 })
 
 attendRouter.get('/data/:key', async (req, res) => {
