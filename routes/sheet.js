@@ -20,7 +20,7 @@ attendRouter.post('/check', async (req, res) => {
                 res.send(user)
             }
             else {
-                res.send('Invalid Employee')
+                res.send('Invalid')
             }
         })
         .catch(()=> {
