@@ -1,19 +1,19 @@
 let mongoose = require('mongoose')
 let attendanceSchema = new mongoose.Schema({
-    code: Number,
+    code: String,
     level: String,
     elevel: String,
-    dcode: Number,
-    rcode: Number,
+    dcode: String,
+    rcode: String,
     name: String,
     dpt: String,
     dat: String,
-    pcode: Number,
-    prcode: Number,
+    pcode: String,
+    prcode: String,
     role: String,
     manager: String,
-    hours: Number,
-    acode: Number,
+    hours: String,
+    acode: String,
     pdes: String
 })
 
